@@ -3,8 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ételrecept Kereső</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-   
+   <div class="container">
+        <div class="header">
+            <div class="logo">🔍</div>
+            <h1>Ételrecept Kereső</h1>
+        </div>
+
+        <div class="content">
+            <div class="search-section">
+                <h2>Választ összetevőket:</h2>
+                <div class="ingredients-list" id="ingredientsList"></div>
+                <button class="search-btn" onclick="keresRecepteket()">Receptek keresése</button>
+            </div>
+
+            <div class="results-section">
+                <h2>Eredmények:</h2>
+                <div class="results" id="results">
+                    <p class="no-results">Nincs találat.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
